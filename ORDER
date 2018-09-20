@@ -1,0 +1,10 @@
+lista=[46,43,34,171,100,88,169,185,149,180,200,274,234,267,16,225,8,18,155,136,122,74,111,262,187,91,233]
+count=0
+for i in range(0,len(lista)-1):
+    for j in range(0,len(lista)-1-i):
+        if lista[j] > lista[j+1]:
+            lista[j], lista[j+1] = lista[j+1], lista[j]
+            count +=1
+
+print(len(lista))
+print(f'Lista final {lista}')
